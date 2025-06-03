@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:0 1rem;
+    ;
+    color: #020207;
+    /* color:#100e10;} */}
+
+/* Styles for the links */
+
+/* Styles for header */
+h1,h2,h3,h4,h5{
+    font-weight: bold;
+}
+
+/* Styles for the navigation */
+header{
+    font-size: 1.5rem;
+    background-color: #a198f6;
+    }
+header{
+        margin: 0 1rem;
+    }
+    .navigation{
+    display:flex;
+    justify-content: space-between;
+    }
+
+
+@media(min-width:40rem){
+    .navigation-site{
+
+    display:flex;
+    justify-content: center;
+    
+}
+.navigation li{
+    list-style-type: none;
+
+}
+/* styles for main */
+h1{
+    font-size:2.5rem;
+    
+    background-image: linear-gradient(#b8b2f0, #ffffff); 
+    padding:5rem;
+    margin:0;
+    
+    
+}
+.about-me{
+    background-image: linear-gradient(white,#b8b2f0);
+    text-decoration: none;
+
+
+    }
+.about-me h2{
+    padding-top:2rem;
+}
+.about-me p{
+    padding-bottom:2rem;
+}
+.projects{
+    border: solid 1px #2e2e97;
+    border-radius: 1rem;
+    background-image: linear-gradient(#b8b2f0,#f7f9fa);
+    }
+
+
+@media(min-width:40rem){
+   #about-us{
+    text-align: center;
+    padding:0 5rem;}
+    h1{
+    font-size:3.5rem;}
+    
+
+}
+
+
+/* styling for portfolio */
+.projects{
+        width: 70%;
+        height:8rem;
+        margin:3rem;
+    }
+.chat{
+    /* background-color: #b8d2f0; */
+     background-color:#b8b2f0;
+    color: white;
+    border:solid 1px #b8b2f0;
+    border-radius: 1rem;
+    margin: 2rem;
+    font-size: 1rem;
+    
+    
+}
+.mail{
+    border:2px solid #b8b2f0;
+    background-color: white;
+    border-radius: 2rem;
+    padding:2rem;
+    margin:2rem 7rem;
+    text-decoration: none;
+}
+
+@media(min-width:40rem){
+    h3{
+        font-size:2.10rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+   .project-wrapper{
+       display:flex;
+	   flex-wrap:wrap;
+		flex-direction: row;
+		
+		justify-content: center;}
+    .projects{
+        width: 35%;
+        height:12rem;
+        margin:2rem;
+    }
+    .chat{
+        font-size: 2rem;
+    }
+}
+/* Styling footer here */
+
+footer{
+    background-color: #aaa2ef;
+    padding:1rem;
+}
