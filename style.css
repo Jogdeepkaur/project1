@@ -1,135 +1,157 @@
 *{
     box-sizing: border-box;
-    text-align: center;
+    text-align: center; 
     font-family:Arial, Helvetica, sans-serif;
-    padding:0 1rem;
-    ;
-    color: #020207;
-    /* color:#100e10;} */}
-
-/* Styles for the links */
-
-/* Styles for header */
+    color:#24116A;
+    }
 h1,h2,h3,h4,h5{
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Styles for the links */
+a{
+    text-decoration: none;
+}
+a:visited {
+	color:#38003D;
 }
 
-/* Styles for the navigation */
-header{
-    font-size: 1.5rem;
-    background-color: #a198f6;
-    }
-header{
-        margin: 0 1rem;
-    }
-    .navigation{
-    display:flex;
-    justify-content: space-between;
-    }
-
-
-@media(min-width:40rem){
-    .navigation-site{
-
-    display:flex;
-    justify-content: center;
-    
+a:hover {
+	color:#750000;
 }
-.navigation li{
-    list-style-type: none;
 
+
+a:focus {
+	color:#C1AA15;
 }
-/* styles for main */
+
+a:active {
+	color:#023B02;
+}
+/* Styles for headings */
+
 h1{
-    font-size:2.5rem;
-    
+    font-size:1.5rem;
     background-image: linear-gradient(#b8b2f0, #ffffff); 
     padding:5rem;
     margin:0;
-    
-    
-}
-.about-me{
-    background-image: linear-gradient(white,#b8b2f0);
-    text-decoration: none;
+    color:#24116A;}
 
-
+/* Styles for the navigation */
+header{
+    font-size: 0.5rem;
+    background-color: #C8C3F9;}
+.navigation{
+    display:flex;
+    justify-content: space-between;
     }
-.about-me h2{
-    padding-top:2rem;
-}
-.about-me p{
-    padding-bottom:2rem;
-}
-.projects{
-    border: solid 1px #2e2e97;
-    border-radius: 1rem;
-    background-image: linear-gradient(#b8b2f0,#f7f9fa);
-    }
-
+.navigation-site{
+        display:flex;
+        justify-content:space-between;}
+.navigation-site li{
+        list-style-type: none;
+        padding:1rem;}
 
 @media(min-width:40rem){
+    header{
+        font-size:1.5rem;}
+    .navigation li{
+        padding:1rem;}
+    .navigation img{
+        width:10rem;
+    }}
+/* styles for main */
+
+.about-me{
+    background-image: linear-gradient(#EFEEFC,#b8b2f0);
+    text-decoration: none;}
+.about-me h2{
+    padding-top:2rem;}
+
+.about-me p{
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+    }
+
+@media(min-width:40em){
    #about-us{
     text-align: center;
-    padding:0 5rem;}
+    padding:0 8rem;} 
     h1{
     font-size:3.5rem;}
-    
+    .about-me p{
+    padding: 2rem 6rem;
+    text-align:left;
+    font-size:clamp(1.5rem,2.5vw,2rem);
+    }}
 
-}
+    /* styling for portfolio */
 
-
-/* styling for portfolio */
 .projects{
         width: 70%;
         height:8rem;
-        margin:3rem;
-    }
+        margin:3rem; 
+        border: solid 1px #b8b2f0;
+        border-radius: 1rem;
+       background-image: linear-gradient(#b8b2f0,#f7f9fa);}
+.project-wrapper a:hover{
+    border: solid 1px #b8b2f0;
+    border-radius:1rem ;
+    background-color: #b8b2f0;}
+
 .chat{
-    /* background-color: #b8d2f0; */
-     background-color:#b8b2f0;
+    background-color: #e8e2ea;
+
+    /* background-color: #dad8f0; */
     color: white;
-    border:solid 1px #b8b2f0;
+    border:solid 1px #e8e2ea;
     border-radius: 1rem;
     margin: 2rem;
-    font-size: 1rem;
-    
-    
-}
-.mail{
-    border:2px solid #b8b2f0;
-    background-color: white;
-    border-radius: 2rem;
-    padding:2rem;
-    margin:2rem 7rem;
-    text-decoration: none;
-}
+    font-size: 1rem;}
 
-@media(min-width:40rem){
-    h3{
+.mail a{
+    background-color: #FFFFFF;
+    border:2px solid #b8b2f0;
+    border-radius: 1rem;
+    padding:0.5rem; 
+    font-size: 1rem;
+    text-decoration: none;
+    margin:2rem 1.5rem;}
+@media(min-width:40em){
+    h2{
         font-size:2.10rem;
     }
-    h4{
+    h3{
         font-size: 2rem;
     }
    .project-wrapper{
        display:flex;
 	   flex-wrap:wrap;
-		flex-direction: row;
-		
+	    flex-direction: row;
 		justify-content: center;}
     .projects{
-        width: 35%;
+        width: 15rem;
         height:12rem;
-        margin:2rem;
-    }
+        margin:2rem;}
     .chat{
         font-size: 2rem;
+        margin: 2rem 6rem;}
+    .mail{
+        margin:2rem 10rem;
     }
+}
+@media (min-width:100rem){
+    .projects{
+        width: 20rem;
+        height:12rem;
+        margin:3rem;}
 }
 /* Styling footer here */
 
 footer{
-    background-color: #aaa2ef;
-    padding:1rem;
-}
+    background-color: #C8C3F9;
+    padding:1rem;}
+.footer{
+    display:flex;
+    justify-content: space-between;}
